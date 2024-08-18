@@ -4,27 +4,62 @@ public class Ascensor {
     int pisos;
     int pisoActual;
 
-    public Ascensor(int pisosMaximos){
-        this.pisos= pisosMaximos;
+    public Ascensor(int pisosMaximo) {
+        this.pisos = pisosMaximo;
+        this.pisoActual=0;
+    }
+    private void bajar() {
+        pisoActual--;
+    }
+
+    private void subir() {
+        pisoActual++;
 
     }
-    private int subir(){
-        return pisoActual++;
-
-    }
-    private int bajar(){
-        return pisoActual--;
-    }
-    public void setPisoActual(){
-        pisoActual=0;
-    }
-    public void llamar(int pisoEnelQueEstoy){
-        pisoActual=pisoEnelQueEstoy;
-
-    }
-    public void ir(int pisoAir){
-        pisoActual=pisoAir;
+    public int pisoActual () {
+        return pisoActual;
     }
 
 
-}
+    public void llamar(int pisoDedondeSeLoLlama) {
+    if(pisoDedondeSeLoLlama<pisoActual) {
+        int pisosAbajar=pisoActual-pisoDedondeSeLoLlama;
+        for (int i = 0; i < pisosAbajar; i++) {
+            bajar();
+        }
+        System.out.println("Llegaste a tu piso: "+pisoActual);
+
+    }
+    else if(pisoDedondeSeLoLlama==pisoActual){
+        System.out.println("el ascensor ya se encuentra en tu piso");
+    }
+    else{
+        int pisosAsubir=pisoDedondeSeLoLlama-pisoActual;
+        for (int i = 0; i < pisosAsubir; i++) {
+            subir();
+        }
+        System.out.println("Llegaste a tu piso: "+pisoActual);
+    }
+    }
+
+    public void ir(int pisoAlqueQuieroIr){
+        if( pisoAlqueQuieroIr<pisoActual) {
+            int pisosAbajar = pisoActual - pisoAlqueQuieroIr;
+            for (int i = 0; i < pisosAbajar; i++) {
+                bajar();
+            }
+        }
+        else if(pisoAlqueQuieroIr==pisoActual) {
+            System.out.println("Ya estas en ese piso");
+        }
+        else{
+            int pisosAsubir=pisoAlqueQuieroIr-pisoActual;
+            for (int i = 0; i < pisosAsubir; i++) {
+                subir();
+            }
+            System.out.println("Llegaste a tu piso: "+pisoActual);
+        }
+    }
+    }
+;
+
