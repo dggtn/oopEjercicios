@@ -2,7 +2,7 @@ package Ejercicio2;
 
 public class Ascensor {
     int pisos;
-    int pisoActual;
+    private int pisoActual;
 
     public Ascensor(int pisosMaximo) {
         this.pisos = pisosMaximo;
@@ -16,9 +16,7 @@ public class Ascensor {
         pisoActual++;
 
     }
-    public int pisoActual () {
-        return pisoActual;
-    }
+
 
 
     public void llamar(int pisoDedondeSeLoLlama) {
@@ -59,6 +57,10 @@ public class Ascensor {
             }
             System.out.println("Llegaste a tu piso: "+pisoActual);
         }
+
+    }
+    public int pisoActual() {
+        return pisoActual;
     }
     }
 ;
