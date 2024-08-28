@@ -7,14 +7,14 @@ public class MainEjercicio6 {
         System.out.println(cajaDeSeguridad.intentarAbrirConClave( 1233));
         System.out.println(cajaDeSeguridad.intentarAbrirConClave( 1233));
         System.out.println(cajaDeSeguridad.intentarAbrirConClave( 1233));
-        System.out.println(cajaDeSeguridad.DesbloquearUtilizandoLaLlave(1));
+        System.out.println(cajaDeSeguridad.desbloquearUtilizandoLaLlave(1));
         System.out.println(cajaDeSeguridad.estaCerrada());
         System.out.println(cajaDeSeguridad.intentarAbrirConClave( 1234));
         System.out.println(cajaDeSeguridad.intentarCerrarConClave( 1266));
         System.out.println(cajaDeSeguridad.intentarCerrarConClave( 1234));
-        System.out.println(cajaDeSeguridad.DesbloquearUtilizandoLaLlave(1));
+        System.out.println(cajaDeSeguridad.desbloquearUtilizandoLaLlave(1));
 
-        System.out.println(cajaDeSeguridad.CambiarClave(1234,1266));
+        System.out.println(cajaDeSeguridad.cambiarClave(1234,1266));
         System.out.println(cajaDeSeguridad.estaAbierta());
         System.out.println(cajaDeSeguridad.estaBloqueada());
         System.out.println(cajaDeSeguridad.estaCerrada());

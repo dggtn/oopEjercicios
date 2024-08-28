@@ -48,7 +48,7 @@ public class CajaDeSeguridad {
         }
     }
 
-    public boolean DesbloquearUtilizandoLaLlave(int llave){
+    public boolean desbloquearUtilizandoLaLlave(int llave){
         if (this.bloqueado){
                 this.bloqueado=false;
                 intentos=0;
@@ -60,7 +60,7 @@ public class CajaDeSeguridad {
             }
     }
 
-    public boolean CambiarClave(int claveActual,int claveNueva) {
+    public boolean cambiarClave(int claveActual, int claveNueva) {
         if (this.abierto && !this.bloqueado) {
             if (claveActual != this.clave) {
                 intentos += 1;
