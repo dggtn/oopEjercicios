@@ -45,11 +45,6 @@ public class TarjetaDeViaje {
 
 
     }
-
-
-
-
-
     public int obtenerViajesRealizados() {
         return cantViajes;
 
