@@ -14,9 +14,10 @@ public class Caja {
         ventas.add(v);
 
     }
-    public void mostrarVentas(){
+    public void mostrar(){
         for (int i = 0; i < ventas.size(); i++) {
-            System.out.println(ventas.get(i));
+            ventas.get(i).imprimir();
+            System.out.println();
 
         }
     }

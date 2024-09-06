@@ -4,8 +4,11 @@ package youtube;
 
 public class Main {
     public static void main(String[] args) {
-      Venta venta = new Venta();
-      venta.setMonto(200);
-      venta.imprimir();
+     Caja caja = new Caja(1);
+     caja.agregarVenta(new Venta(100));
+     caja.agregarVenta(new Venta(200));
+     caja.agregarVenta(new Venta(300));
+     caja.mostrar();
+
     }
 };
