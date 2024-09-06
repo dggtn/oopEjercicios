@@ -1,7 +1,8 @@
 package youtube;
 
 public class VentaConTarjeta extends Venta{
-    String numeroTarjeta;
+    private String numeroTarjeta;
+    private int CantidadDeCuotas;
     public VentaConTarjeta(double monto,String numeroTarjeta){
         super(monto);
         this.numeroTarjeta =numeroTarjeta;
