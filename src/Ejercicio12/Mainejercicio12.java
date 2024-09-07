@@ -12,5 +12,7 @@ public class Mainejercicio12 {
         banco.mostrar();
         banco.cobrarMantenimientoMensual();
         banco.mostrar();
+        banco.cobrarMantenimientoMensual();
+        banco.mostrar();
     }
 };
