@@ -1,11 +1,17 @@
 package Ejercicio12;
 
+import java.util.Calendar;
+
 public class Fecha {
     private int dia;
     private int mes;
     private int anio;
 
-
+public Fecha(){
+    dia= Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+    mes= Calendar.getInstance().get(Calendar.MONTH);
+    anio= Calendar.getInstance().get(Calendar.YEAR);
+}
     @Override
     public String toString() {
         return   "dia=" + dia +
