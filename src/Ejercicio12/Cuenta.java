@@ -1,9 +1,9 @@
 package Ejercicio12;
 
 public class Cuenta {
-    double saldo;
-    String propietario;
-    Fecha fechaApertura= new Fecha();
+    protected double saldo;
+    public String propietario;
+    public Fecha fechaApertura= new Fecha();
 
 
     @Override
@@ -14,6 +14,19 @@ public class Cuenta {
                 ", fechaApertura=" + fechaApertura;
     }
 
+
+    public void extraer(double monto)  {
+        if (monto > saldo) {
+            System.out.println("Fondos insuficientes");
+        } else {
+            saldo = saldo - monto;
+        }
+    }
+
+
+    public void depositar(double monto){
+        saldo=saldo+monto;
+    }
     public Cuenta() {
     }
 
@@ -24,10 +37,6 @@ public class Cuenta {
 
     public double getSaldo() {
         return saldo;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
     }
 
     public String getPropietario() {
