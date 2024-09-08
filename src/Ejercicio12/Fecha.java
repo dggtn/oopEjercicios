@@ -1,5 +1,6 @@
 package Ejercicio12;
 
+import java.time.LocalDateTime;
 import java.util.Calendar;
 
 public class Fecha {
@@ -8,9 +9,9 @@ public class Fecha {
     private int anio;
 
 public Fecha(){
-    dia= Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
-    mes= Calendar.getInstance().get(Calendar.MONTH)+1;
-    anio= Calendar.getInstance().get(Calendar.YEAR);
+    dia= LocalDateTime.now().getDayOfMonth();
+    mes= LocalDateTime.now().getMonthValue();
+    anio= LocalDateTime.now().getYear();
 }
     @Override
     public String toString() {

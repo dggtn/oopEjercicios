@@ -1,9 +1,11 @@
 package Ejercicio11;
 
+import java.util.List;
+
 public class Venta {
     int numeroFactura;
     Fecha fecha = new Fecha();
-    java.util.ArrayList<LineaVenta>lineas = new java.util.ArrayList<LineaVenta>();
+    List<LineaVenta> lineas = new java.util.ArrayList<LineaVenta>();
     public Venta(int numeroFactura1){
         numeroFactura=numeroFactura1;
     }

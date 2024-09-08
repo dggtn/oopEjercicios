@@ -1,4 +1,4 @@
-package youtube;
+package Ejercicio10;
 
 public class VentaConTarjeta extends Venta{
     private String numeroTarjeta;
