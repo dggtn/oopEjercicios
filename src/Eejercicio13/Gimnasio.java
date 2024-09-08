@@ -6,12 +6,6 @@ public class Gimnasio {
     private String nombre;
     private ArrayList<Clase>clases= new ArrayList<Clase>();
 
-    @Override
-    public String toString() {
-        return "Gimnasio" +
-                "nombre='" + nombre + '\'' +
-                ", clases=" + clases;
-    }
 
     public Gimnasio(String nombre) {
         this.nombre = nombre;
