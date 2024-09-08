@@ -1,7 +1,5 @@
 package Eejercicio13;
 
-public class Socio {
-    String nombre;
-    int dniSocio;
+public class Socio extends Persona {
     int id;
 }

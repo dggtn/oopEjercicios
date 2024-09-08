@@ -1,10 +1,9 @@
 package Eejercicio13;
 
-public class Instructor {
-    int nombre;
-    int dni;
-    int idProfesor;
-    double sueldo;
-    String tipoDeClase;
+public class Instructor extends Empleado {
+    private String tipoDeClase;
 
+    public Instructor(String tipoDeClase) {
+        this.tipoDeClase = tipoDeClase;
+    }
 }
