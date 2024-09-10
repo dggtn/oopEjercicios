@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Gimnasio {
     private String nombre;
-    private ArrayList<Clase>clases= new ArrayList<Clase>();
-
+    private ArrayList<Clase>clases= new ArrayList<>();
+    private ArrayList<Socio>socios= new ArrayList<>();
 
     public Gimnasio(String nombre) {
         this.nombre = nombre;
@@ -24,5 +24,8 @@ public class Gimnasio {
             System.out.println(clases);
         }
 
+    }
+
+    public void agregarSocios() {
     }
 }
